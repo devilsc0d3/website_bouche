@@ -43,25 +43,22 @@
         padding-bottom: 80px;
     }
 
+    header hr {
+        width: clamp(50px, 50%, 600px);
+    }
 
 </style>
 <body>
 
 <header class="header fade-in">
 
-    <div class="overlay">
-<!--        <div class="title fade-in">-->
-<!--            <h1>Bienvenue dans l'entreprise Bouche JC et Patricia</h1><br>-->
-<!--            <p>l'exellence a deux</p>-->
-<!--        </div>-->
-    </div>
+    <div class="overlay"></div>
 
     <nav class="navbar navbar-expand-lg navbar-light  ps-4 pe-4">
         <a class="navbar-brand c-w title-menu" href="index.html">
             <img src="../img/photo/logo-test.jpg" alt="Contact" class="img-fluid rounded-5 me-3">
             Entreprise Bouche
         </a>
-
 
         <button class="navbar-toggler c-t" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,11 +72,16 @@
                 <li class="nav-item">
                     <a class="nav-link c-w" href="about.html">Activités</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link c-w" href="#contact">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
     <div class="title fade-in m-auto">
-        <h1>Bienvenue dans l'entreprise Bouche JC et Patricia</h1><br>
+        <h1>Bienvenue dans l'entreprise Bouche JC et Patricia</h1>
+        <br>
+        <hr class=" c-w m-auto">
         <p>l'exellence a deux</p>
     </div>
 
@@ -202,7 +204,7 @@
 
     <hr class="mx-auto w-50">
 
-    <article>
+    <article id="contact">
         <div class="container">
             <h1 class="m-5 text-center">Comment nous <strong class="c-primary">contacter</strong> ?</h1>
         </div>
@@ -257,7 +259,8 @@
         <div class="row">
             <div class="col-md-4">
                 <h4>Coordonnées</h4>
-                <a href="https://www.google.fr/maps/place/31290+Vall%C3%A8gue/@43.4246333,1.6985724,13336m/data=!3m1!1e3!4m6!3m5!1s0x12aef3874f15f6df:0x263c8d797c4a72dc!8m2!3d43.425548!4d1.754698!16s%2Fm%2F03nt6j3?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">vallègue, 31290</a><br>
+                <a href="https://www.google.fr/maps/place/31290+Vall%C3%A8gue/@43.4246333,1.6985724,13336m/data=!3m1!1e3!4m6!3m5!1s0x12aef3874f15f6df:0x263c8d797c4a72dc!8m2!3d43.425548!4d1.754698!16s%2Fm%2F03nt6j3?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">vallègue,
+                    31290</a><br>
                 <a href="tel:0646450849">Coordonnées Jc : 06 46 45 08 49</a><br>
                 <a href="tel:0611524443">Coordonnées Pat : 06 11 52 44 43</a><br>
                 <a href="mailto:contact@entreprisebouche.com" class="text-white">Email :
