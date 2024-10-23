@@ -1,0 +1,73 @@
+.header {
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    /*font-size: 3vw;*/
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header p {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header li {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+    font-size: clamp(20px, 1.2vw, 90px);
+}
+
+#mentions-legales {
+    margin-top: 50px;
+}
+
+#mentions-legales h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#mentions-legales p {
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+#cgps {
+    margin-top: 50px;
+}
+
+#cgps h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#cgps h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+#cgps p {
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+
+#cgu {
+    margin-top: 50px;
+}
+
+#cgu p {
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+header img {
+    width: clamp(30px, 20vw, 100px);
+}
