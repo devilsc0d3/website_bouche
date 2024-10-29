@@ -71,3 +71,7 @@ header li {
 header img {
     width: clamp(30px, 20vw, 100px);
 }
+
+.bottom-m {
+    margin-bottom: -5px;
+}
