@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Mukta:wght@200;300;400;500;600;700;800&family=Playwrite+GB+S:ital@0;1&display=swap');
+
 .overlay {
     position: absolute;
     top: 0;
@@ -28,6 +30,7 @@ header h1 {
     color: #ffffff;
     text-align: center;
     margin-top: 20px;
+
 }
 
 header p {
@@ -35,7 +38,12 @@ header p {
     color: #ffffff;
     text-align: center;
     margin-top: 20px;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
 }
+
 
 header li {
     color: #ffffff;
