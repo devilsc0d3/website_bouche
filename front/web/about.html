@@ -60,9 +60,19 @@
         padding: 50px 0;
         border-radius: 0 80px 80px 0;
     }
+
     .test2 {
         margin-left: 800px;
     }
+
+    .test3 {
+        background: #7e73cc;
+        width: 100%;
+        padding: 50px;
+        border-radius: 20px 20px 100px 80px;
+    }
+
+
 </style>
 <body>
 <!-- Header Section -->
@@ -196,54 +206,56 @@
     <!-- Plomberie Section -->
     <article id="plomberie" class="mb-5 fade-in test">
         <div class="test2">
-        <h2 class="text-center mb-4 c-w">Plomberie</h2>
-        <hr class="w-25 text-center m-auto c-w">
-        <br>
-        <div class="row">
-            <div class="col-md-6 order-md-1">
-                <div id="carouselPlomberie" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- 1 picture -->
-                        <div class="carousel-item active">
-                            <img src="../img/photo/plomberie/espace_wc.jpeg" class="img-fluid round-2 d-block w-100"
-                                 alt="Installation de climatisation 1" loading="lazy">
+            <h2 class="text-center mb-4 c-w">Plomberie</h2>
+            <hr class="w-25 text-center m-auto c-w">
+            <br>
+            <div class="row m-3">
+                <div class="col-md-6 order-md-1">
+                    <div id="carouselPlomberie" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- 1 picture -->
+                            <div class="carousel-item active">
+                                <img src="../img/photo/plomberie/espace_wc.jpeg" class="img-fluid round-2 d-block w-100"
+                                     alt="Installation de climatisation 1" loading="lazy">
+                            </div>
                         </div>
+                        <!-- button next & back -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlomberie"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPlomberie"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <!-- button next & back -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlomberie"
-                            data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPlomberie"
-                            data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                </div>
+                <div class="col-md-6 order-md-2 c-w">
+                    <p>
+                        L'entreprise Bouche JC & Patricia est à vos côtés pour tous vos projets de plomberie, que ce
+                        soit
+                        pour l'installation dans une nouvelle construction ou la rénovation de votre logement. <br>
+                        Nous mettons en place des systèmes de plomberie fiables, durables et conformes aux normes
+                        actuelles,
+                        assurant ainsi performance et sérénité dans votre quotidien.
+                    </p>
+                    <br>
+                    <ul>
+                        <li>
+                            Installation et rénovation de systèmes de plomberie : <br>
+                            &emsp;Que vous construisiez une nouvelle maison ou rénoviez votre logement, nous vous<br>
+                            &emsp;accompagnons dans la mise en place de systèmes de plomberie performants,<br>
+                            &emsp;durables et conformes aux normes.
+                        </li>
+
+                        <li>Travaux sur réseaux sanitaire, chauffage et évacuation</li>
+                        <li>Pose wc standard, suspendu et sanibroyeur</li>
+                        <li>Remplacement cumulus</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6 order-md-2 c-w">
-                <p>
-                    L'entreprise Bouche JC & Patricia est à vos côtés pour tous vos projets de plomberie, que ce soit
-                    pour l'installation dans une nouvelle construction ou la rénovation de votre logement. <br>
-                    Nous mettons en place des systèmes de plomberie fiables, durables et conformes aux normes actuelles,
-                    assurant ainsi performance et sérénité dans votre quotidien.
-                </p>
-                <br>
-                <ul>
-                    <li>
-                        Installation et rénovation de systèmes de plomberie : <br>
-                        &emsp;Que vous construisiez une nouvelle maison ou rénoviez votre logement, nous vous<br>
-                        &emsp;accompagnons dans la mise en place de systèmes de plomberie performants,<br>
-                        &emsp;durables et conformes aux normes.
-                    </li>
-
-                    <li>Travaux sur réseaux sanitaire, chauffage et évacuation</li>
-                    <li>Pose wc standard, suspendu et sanibroyeur</li>
-                    <li>Remplacement cumulus</li>
-                </ul>
-            </div>
-        </div>
         </div>
     </article>
 
@@ -295,66 +307,69 @@
     </article>
 
     <!-- Climatisation Section -->
-    <article id="climatisation" class="mb-5 fade-in">
-        <h2 class="text-center mb-4 c-primary">Pompe a chaleur & climatisation</h2>
-        <hr class="w-50 text-center m-auto c-primary">
-        <br>
-        <div class="row">
-            <div class="col-md-6 order-md-1">
-                <div id="carouselClimatisation" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- 1 picture -->
-                        <div class="carousel-item active">
-                            <img src="../img/photo/clim_&_pompe_a_chaleur/pac_1_unité_extérieure.jpeg"
-                                 class="img-fluid round-2 d-block w-100" alt="Installation de climatisation 1"
-                                 loading="lazy">
+    <article id="climatisation" class="mb-5 fade-in test3">
+        <div class="test4">
+            <h2 class="text-center mb-4 c-w">Pompe a chaleur & climatisation</h2>
+            <hr class="w-50 text-center m-auto c-w">
+            <br>
+            <div class="row">
+                <div class="col-md-6 order-md-1">
+                    <div id="carouselClimatisation" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- 1 picture -->
+                            <div class="carousel-item active">
+                                <img src="../img/photo/clim_&_pompe_a_chaleur/pac_1_unité_extérieure.jpeg"
+                                     class="img-fluid round-2 d-block w-100" alt="Installation de climatisation 1"
+                                     loading="lazy">
+                            </div>
+                            <!-- 2nd picture -->
+                            <div class="carousel-item">
+                                <img src="../img/photo/clim_&_pompe_a_chaleur/pac_1_unité_intérieure.jpeg"
+                                     class="img-fluid round-2 d-block w-100" alt="Installation de climatisation 2"
+                                     loading="lazy">
+                            </div>
+                            <!-- 3nd picture -->
+                            <div class="carousel-item">
+                                <img src="../img/photo/clim_&_pompe_a_chaleur/pac_2_unité_extérieure.jpeg"
+                                     class="img-fluid round-2 d-block w-100" alt="Installation de climatisation 3"
+                                     loading="lazy">
+                            </div>
+                            <!-- 4nd picture -->
+                            <div class="carousel-item">
+                                <img src="../img/photo/clim_&_pompe_a_chaleur/pac_2_unité_intérieure.jpeg"
+                                     class="img-fluid round-2 d-block w-100" alt="Installation de climatisation 3"
+                                     loading="lazy">
+                            </div>
                         </div>
-                        <!-- 2nd picture -->
-                        <div class="carousel-item">
-                            <img src="../img/photo/clim_&_pompe_a_chaleur/pac_1_unité_intérieure.jpeg"
-                                 class="img-fluid round-2 d-block w-100" alt="Installation de climatisation 2"
-                                 loading="lazy">
-                        </div>
-                        <!-- 3nd picture -->
-                        <div class="carousel-item">
-                            <img src="../img/photo/clim_&_pompe_a_chaleur/pac_2_unité_extérieure.jpeg"
-                                 class="img-fluid round-2 d-block w-100" alt="Installation de climatisation 3"
-                                 loading="lazy">
-                        </div>
-                        <!-- 4nd picture -->
-                        <div class="carousel-item">
-                            <img src="../img/photo/clim_&_pompe_a_chaleur/pac_2_unité_intérieure.jpeg"
-                                 class="img-fluid round-2 d-block w-100" alt="Installation de climatisation 3"
-                                 loading="lazy">
-                        </div>
+                        <!-- button next & back -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselClimatisation"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselClimatisation"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <!-- button next & back -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselClimatisation"
-                            data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselClimatisation"
-                            data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-            </div>
-            <div class="col-md-6 order-md-1">
-                <p>
-                    L'entreprise Bouche JC & Patricia est votre partenaire pour l’installation de solutions de chauffage
-                    et de climatisation alliant performance, économie et respect de l’environnement. Forts de notre
-                    certification QUALIPAC, nous garantissons des installations de haute qualité, en accord avec les
-                    normes les plus exigeantes.
-                </p>
-                <br>
-                <ul>
-                    <li>Pose de pompe à chaleur air/air et air/eau</li>
-                    <li>Installation de ballon thermodynamique</li>
-                    <li>Installation de climatisation</li>
-                    <li>CERTIFICATION QUALIPAC</li>
-                </ul>
+                <div class="col-md-6 order-md-1 c-w">
+                    <p>
+                        L'entreprise Bouche JC & Patricia est votre partenaire pour l’installation de solutions de
+                        chauffage
+                        et de climatisation alliant performance, économie et respect de l’environnement. Forts de notre
+                        certification QUALIPAC, nous garantissons des installations de haute qualité, en accord avec les
+                        normes les plus exigeantes.
+                    </p>
+                    <br>
+                    <ul>
+                        <li>Pose de pompe à chaleur air/air et air/eau</li>
+                        <li>Installation de ballon thermodynamique</li>
+                        <li>Installation de climatisation</li>
+                        <li>CERTIFICATION QUALIPAC</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </article>
