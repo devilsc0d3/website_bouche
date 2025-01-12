@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://www.tonsite.com/sitemap.xml  # Lien vers le fichier sitemap
+Sitemap: http://www.bouche-jc.fr/sitemap.xml

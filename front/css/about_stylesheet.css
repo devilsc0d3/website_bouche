@@ -105,9 +105,15 @@ header hr {
     margin: 200px 0 200px 0;
 }
 
-main img {
+article img {
     filter: saturate(30%);
     transition: filter 0.2s ease-in-out;
+}
+
+.size-img {
+    width: 50vw; /* Valeur par défaut (valeur intermédiaire) */
+    min-width: 300px; /* Valeur minimale */
+    max-width: 600px; /* Valeur maximale */
 }
 
 p, ul {
