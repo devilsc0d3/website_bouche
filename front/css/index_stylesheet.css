@@ -59,6 +59,7 @@ header hr {
 
 .header {
     height: 110vh;
+    min-height: 800px;
     position: relative;
     overflow: hidden;
 }
