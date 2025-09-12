@@ -49,6 +49,13 @@ header img {
     width: clamp(30px, 20vw, 100px);
 }
 
+.wave1 {
+    margin-bottom: -2px;
+}
+
+.wave2 {
+    margin-top: -5px;
+}
 
 .background-video {
     position: absolute;
