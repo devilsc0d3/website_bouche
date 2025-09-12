@@ -1,65 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Mukta:wght@200;300;400;500;600;700;800&family=Playwrite+GB+S:ital@0;1&display=swap');
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    transition: transform 0.4s ease;
-
-}
-
-.navbar-toggler-icon:hover {
-    transform: scale(1.1);
-
-}
-
-.navbar-toggler:focus .navbar-toggler-icon {
-    transform: scale(0.8);
-}
-
-.navbar-toggler.collapsed .navbar-toggler-icon {
-    transform: scale(1.2);
-}
-
-.header nav {
-    /*background-color: rgba(0, 0, 0, 0.1);*/
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0));
-    padding-bottom: 80px;
-}
-
-header hr {
-    width: clamp(50px, 50%, 600px);
-}
-
-.white-icon {
-    filter: brightness(0) invert(1);
-}
-
-
-.title {
-    margin-top: -100px;
-    font-family: Rockwell, serif;
-}
-
 .header {
-    height: 110vh;
-    min-height: 800px;
+    height: 100vh;
+    width: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -72,8 +15,19 @@ header h1 {
 
 }
 
+/*.path {*/
+/*    */
+/*    clip-path: path("M0,0 L70,40 A10,10 0 0 0 80,30 L80,10 A10,10 0 0 1 90,0 L140,0 A10,10 0 0 1 150,10 L150,190 A10,10 0 0 1 140,200 L10,200 L0,190 L0,50 L10,40 Z");*/
+/*}*/
+.path {
+    clip-path: url(#myPath);
+    /*background: url("https://picsum.photos/1200/800") center/cover no-repeat;*/
+    transform: scale(0.5); /* 3x plus haut que l’original */
+}
+
+
 header p {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #ffffff;
     text-align: center;
     margin-top: 20px;
@@ -95,43 +49,73 @@ header img {
     width: clamp(30px, 20vw, 100px);
 }
 
-.title-menu {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: clamp(15px, 1.2vw, 90px);
-    margin: 10px;
-}
-
-/*.header {*/
-/*    background: url("../img/photo/splash2.jpg") no-repeat center center/cover;*/
-/*    z-index: -1;*/
-/*}*/
 
 .background-video {
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100%;
+    max-width: 95vw;
+    border-radius: 25px;
+    height: 95vh;
+    min-height: 600px;
     z-index: -1;
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 95vw;
+    height: 95vh;
+    min-height: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    margin: auto;
+    margin-top: 250px;
+    font-family: Rockwell, serif;
+    width: 90%;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+
+.area {
+    margin: 10px auto;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 15px;
+    z-index: 1;
+    margin-top: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
 
 .bottom-m {
     position: absolute;
     bottom: -5px;
 }
 
-.wave1 {
-    margin-bottom: -2px;
-}
 
-.wave2 {
-    margin-top: -5px;
-}
 
 .widget {
     min-width: 200px;
@@ -144,8 +128,13 @@ header img {
     transition: all 0.3s;
 }
 
+
 .widget:hover {
     transform: scale(1.1);
+}
+
+.white-icon {
+    filter: brightness(0) invert(1);
 }
 
 .tarifs {
@@ -184,5 +173,163 @@ article a {
 
     .container .row .col h1 {
         font-size: 1.5rem;
+    }
+}
+
+/* Responsive improvements for index page */
+
+/* Mobile styles */
+@media (max-width: 920px) {
+    .header {
+        height: 100vh;
+        min-height: 600px;
+    }
+    
+    .area .navbar-brand {
+        font-size: 0.8rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+    
+    header p {
+        font-size: 1.2rem;
+        padding: 0 20px;
+        margin-top: 15px;
+    }
+    
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .title {
+        padding: 20px;
+    }
+    
+    .title hr {
+        width: 60%;
+        margin: 20px auto;
+    }
+    
+    /* Service widgets on mobile */
+    .widget {
+        margin-bottom: 15px;
+        padding: 20px;
+    }
+    
+    .widget h3 {
+        font-size: 1.2rem;
+    }
+    
+    .widget p {
+        font-size: 0.9rem;
+    }
+    
+    /* Video background adjustments */
+    .background-video {
+        object-position: center center;
+    }
+    
+    
+    /* Contact section */
+    .w-50px {
+        width: 40px !important;
+    }
+    
+    /* Footer improvements */
+    footer .row .col-md-4 {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 621px) and (max-width: 991px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header p {
+        font-size: 1.5rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .widget {
+        padding: 25px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 992px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    
+    header p {
+        font-size: 2rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+    
+    header p {
+        font-size: 2.2rem;
+    }
+}
+
+/* Landscape mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .header {
+        height: auto;
+        min-height: 500px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+        margin-top: 15px;
+    }
+    
+    header p {
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+    
+    .title {
+        padding: 15px;
+    }
+}
+
+/* Touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .widget:hover {
+        transform: none;
+    }
+    
+    .widget:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+    
+    .nav-link:hover {
+        color: inherit;
     }
 }
