@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Redirection des routes
+RewriteRule ^$ front/web/index.html [L] 
+RewriteRule ^about$ front/web/about.html [L]
+RewriteRule ^mention-legal$ front/web/mention-legal.html [L]
+RewriteRule ^sitemap$ front/web/sitemap.html [L]
+
+# Redirections des erreurs
+ErrorDocument 404 /front/web/404.html
+
+# securité pour les images
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !bouche-jc\.fr [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [F]
+
