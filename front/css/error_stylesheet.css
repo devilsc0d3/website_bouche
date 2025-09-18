@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e293b;
+}
+
+.error-container {
+    text-align: center;
+    padding: 3rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 3rem;
+    border-radius: 12px;
+}
+
+.error-code {
+    font-size: clamp(5rem, 12vw, 8rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+}
+
+.error-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+.error-message {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    color: #64748b;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin: 3rem 0;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 1.5rem 1rem;
+    transition: all 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.service-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(80, 67, 201, 0.15);
+    border-color: #5043c9;
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto 0.75rem;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.service-card:hover .service-icon {
+    opacity: 1;
+}
+
+.service-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #475569;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0 2rem;
+}
+
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #5043c9;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background: #3d34a5;
+    transform: translateY(-1px);
+    color: white;
+}
+
+.secondary-button {
+    background: white;
+    color: #5043c9;
+    border: 1px solid #5043c9;
+}
+
+.secondary-button:hover {
+    background: #5043c9;
+    border-color: #5043c9;
+    color: white;
+}
+
+.countdown {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .error-container {
+        padding: 2rem 1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        margin: 2rem 0;
+        max-width: 320px;
+    }
+    
+    .service-card {
+        padding: 1rem 0.75rem;
+    }
+    
+    .service-title {
+        font-size: 0.8rem;
+    }
+    
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .home-button {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 100%;
+    }
+    
+    .service-card {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .service-icon {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .service-title {
+        font-size: 0.75rem;
+    }
+}
