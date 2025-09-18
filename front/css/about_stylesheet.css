@@ -331,7 +331,7 @@ nav .container {
     }
     
     .widget {
-        border-radius: 20px 20px 60px 40px;
+        border-radius: 20px;
         padding: 40px 30px;
     }
     
@@ -382,7 +382,7 @@ nav .container {
     }
     
     .widget {
-        border-radius: 20px 20px 100px 80px;
+        border-radius: 20px;
         padding: 50px;
     }
     
