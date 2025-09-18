@@ -25,6 +25,11 @@ header li {
     font-size: clamp(20px, 1.2vw, 90px);
 }
 
+/* Ajustement de la vague pour tablette */
+.bottom-0-m {
+    bottom: -20px;
+}
+
 .navbar-toggler {
     border: none;
 }

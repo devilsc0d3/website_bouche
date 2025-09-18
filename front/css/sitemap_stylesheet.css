@@ -1,10 +1,23 @@
-.bottom-m {
-    /*position: absolute;*/
-    margin-bottom: -2px;
+h2 {
+    color: #5043c9;
 }
 
 main {
     min-height: 60vh;
+}
+
+
+.header {
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    /*font-size: 3vw;*/
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
 }
 
 header p {
@@ -21,8 +34,9 @@ header li {
     font-size: clamp(20px, 1.2vw, 90px);
 }
 
-header img {
-    width: clamp(30px, 20vw, 100px);
+/* Ajustement de la vague pour tablette */
+.bottom-0-m {
+    bottom: -20px;
 }
 
 .navbar-toggler {
@@ -32,10 +46,12 @@ header img {
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     transition: transform 0.4s ease;
+
 }
 
 .navbar-toggler-icon:hover {
     transform: scale(1.1);
+
 }
 
 .navbar-toggler:focus .navbar-toggler-icon {
@@ -47,25 +63,23 @@ header img {
 }
 
 .header nav {
+    /*background-color: rgba(0, 0, 0, 0.1);*/
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0));
     padding-bottom: 80px;
 }
 
-header h1 {
-    font-size: clamp(30px, 3vw, 50px);;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 20px;
+header hr {
+    width: clamp(50px, 50%, 450px);
 }
 
-.title-menu {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: clamp(15px, 1.2vw, 90px);
-    margin: 10px;
+header img {
+    width: clamp(30px, 20vw, 100px);
 }
 
-a {
+.bottom-m {
+    margin-bottom: -5px;
+}
+
+h2 {
     color: #5043c9;
-    text-decoration: none;
 }
