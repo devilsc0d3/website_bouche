@@ -226,8 +226,6 @@ RewriteRule \.(jpg|jpeg|png|gif)$ - [F]
 ### Points d'amélioration futurs
 - [ ] Intégration Google Analytics
 - [ ] Données structurées Schema.org
-- [ ] Optimisation des images WebP
-- [ ] Cache navigateur optimisé
 
 ---
 
