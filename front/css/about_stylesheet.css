@@ -567,3 +567,59 @@ html {
         display: none;
     }
 }
+
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    body, main, .test {
+        background-color: #181828 !important;
+        color: #f3f3f3 !important;
+    }
+
+    header {
+        background: linear-gradient(135deg, #161622, #161622, #161622) !important;
+        color: #f3f3f3 !important;
+    }
+
+    .navbar, .bg-primary-m {
+        background-color: #161622 !important;
+        color: #f3f3f3 !important;
+        /* box-shadow: 0 8px 48px 0 rgba(80, 67, 201, 0.15), 0 4px 24px 0 rgba(0,0,0,0.18); */
+    }
+
+
+    .widget, .widget-left, .service-widget {
+        background-color: #232347 !important;
+        color: #f3f3f3 !important;
+        /* box-shadow: 0 8px 48px 0 rgba(80, 67, 201, 0.15), 0 4px 24px 0 rgba(0,0,0,0.18); */
+    }
+
+    .navbar-brand, .nav-link, .title-menu, h1, h2, h3, h4, p, ul, li {
+        color: #f3f3f3 !important;
+    }
+
+    .c-primary, .c-w {
+        color: #f3f3f3 !important;
+    }
+
+    /* Waves SVG dark mode */
+    header svg path,
+    .bottom-wave path {
+        fill: #181828 !important;
+        /* Optionally, you can add a slight opacity for a softer effect: */
+        /* fill-opacity: 0.95 !important; */
+    }
+
+    /* Footer */
+    footer.bg-dark, footer {
+        background-color: #161622 !important;
+        color: #f3f3f3 !important;
+    }
+    footer a {
+        color: #f3f3f3 !important;
+    }
+    footer hr.bg-white {
+        background-color: #444 !important;
+    }
+    
+}

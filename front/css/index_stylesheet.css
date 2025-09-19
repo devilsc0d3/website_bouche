@@ -340,3 +340,58 @@ article a {
         color: inherit;
     }
 }
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    body, .bg-primary-m, .area {
+        background-color: #181828 !important;
+        color: #f3f3f3 !important;
+    }
+
+    .header {
+        background-color: #181828;
+    }
+
+    .navbar, .area {
+        background-color: #232347 !important;
+    }
+
+    .navbar-brand, .nav-link, .title, .widget, .footer, footer {
+        color: #f3f3f3 !important;
+    }
+
+    .widget {
+        background-color: #232347 !important;
+        color: #f3f3f3 !important;
+    }
+
+    .bg-primary-m {
+        background-color: #232347 !important;
+    }
+
+    .c-primary, .c-w {
+        color: #f3f3f3 !important;
+    }
+
+    /* Waves SVG dark mode */
+    .wave1 svg rect,
+    .wave2 svg rect {
+        fill: #232347 !important;
+    }
+    .wave1 svg path,
+    .wave2 svg path {
+        fill: #181828 !important;
+    }
+
+    /* Footer */
+    footer.bg-dark {
+        background-color: #161622 !important;
+        color: #f3f3f3 !important;
+    }
+    footer a {
+        color: #f3f3f3 !important;
+    }
+    footer hr.bg-white {
+        background-color: #444 !important;
+    }
+}

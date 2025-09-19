@@ -203,3 +203,77 @@ body {
         font-size: 0.75rem;
     }
 }
+
+/* ...existing code... */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #181828 !important;
+        color: #f3f3f3 !important;
+    }
+
+    .error-container {
+        background: transparent !important;
+        color: #f3f3f3 !important;
+        box-shadow: none !important;
+    }
+
+    .error-code {
+        color: #b3b8f7 !important;
+    }
+
+    .error-title {
+        color: #e0e3fa !important;
+    }
+
+    .error-message {
+        color: #b3b8f7 !important;
+    }
+
+    .service-card {
+        background: #232347 !important;
+        border-color: #5043c9 !important;
+        color: #f3f3f3 !important;
+    }
+
+    .service-title {
+        color: #b3b8f7 !important;
+    }
+
+    .service-card:hover {
+        background: #5043c9 !important;
+        color: #fff !important;
+        border-color: #5043c9 !important;
+    }
+
+    .service-icon {
+        filter: brightness(0) invert(1) !important;
+        opacity: 1 !important;
+    }
+
+    .home-button {
+        background: #5043c9 !important;
+        color: #fff !important;
+    }
+
+    .home-button:hover {
+        background: #3d34a5 !important;
+        color: #fff !important;
+    }
+
+    .secondary-button {
+        background: #232347 !important;
+        color: #b3b8f7 !important;
+        border-color: #5043c9 !important;
+    }
+
+    .secondary-button:hover {
+        background: #5043c9 !important;
+        color: #fff !important;
+        border-color: #5043c9 !important;
+    }
+
+    .countdown {
+        color: #b3b8f7 !important;
+    }
+}
