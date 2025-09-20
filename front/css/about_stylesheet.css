@@ -144,7 +144,7 @@ header hr {
 }
 
 article img {
-    filter: saturate(30%);
+    /* filter: saturate(30%); */
     transition: filter 0.2s ease-in-out;
 }
 
