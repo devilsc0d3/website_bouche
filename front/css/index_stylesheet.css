@@ -383,6 +383,10 @@ article a {
         fill: #181828 !important;
     }
 
+    .themedark {
+        filter: brightness(0) invert(1) !important;
+    }
+
     /* Footer */
     footer.bg-dark {
         background-color: #161622 !important;
