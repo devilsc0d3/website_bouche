@@ -144,11 +144,11 @@ h2 {
     color: #f3f3f3 !important;
   }
 
-  a {
+  main a {
     color: #b3b8f7 !important;
   }
 
-  a:hover {
+  main a:hover {
     color: #fff !important;
     text-decoration: underline;
   }
