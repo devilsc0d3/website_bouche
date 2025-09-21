@@ -1,3 +1,27 @@
+/* Bouton scroll to top */
+#scrollToTopBtn {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9999;
+  background: #5043c9;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  opacity: 0.85;
+}
+#scrollToTopBtn:hover {
+  opacity: 1;
+  background: #7e73cc;
+}
 header {
   min-height: 100vh;
 }
