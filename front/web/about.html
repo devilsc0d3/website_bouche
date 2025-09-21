@@ -61,10 +61,22 @@
   </head>
 
   <body>
-    <button id="scrollToTopBtn" title="Remonter en haut" style="display:none;">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="12" fill="none"/>
-        <path d="M12 18V6M12 6L6 12M12 6L18 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <button id="scrollToTopBtn" title="Remonter en haut" style="display: none">
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="12" cy="12" r="12" fill="none" />
+        <path
+          d="M12 18V6M12 6L6 12M12 6L18 12"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
       </svg>
     </button>
     <header
@@ -794,16 +806,16 @@
       }
 
       // Bouton scroll to top
-      const scrollBtn = document.getElementById('scrollToTopBtn');
-      window.addEventListener('scroll', function() {
+      const scrollBtn = document.getElementById("scrollToTopBtn");
+      window.addEventListener("scroll", function () {
         if (window.scrollY > 300) {
-          scrollBtn.style.display = 'block';
+          scrollBtn.style.display = "block";
         } else {
-          scrollBtn.style.display = 'none';
+          scrollBtn.style.display = "none";
         }
       });
-      scrollBtn.addEventListener('click', function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+      scrollBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
     </script>
   </body>

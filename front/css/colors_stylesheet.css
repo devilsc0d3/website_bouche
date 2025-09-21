@@ -67,9 +67,11 @@
 }
 
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
-  background: url('data:image/svg+xml;utf8,<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><polygon points="8,4 12,10 4,10" fill="%235043c9"/></svg>') no-repeat center;
+  background: url('data:image/svg+xml;utf8,<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><polygon points="8,4 12,10 4,10" fill="%235043c9"/></svg>')
+    no-repeat center;
 }
 
 ::-webkit-scrollbar-button:single-button:vertical:increment {
-  background: url('data:image/svg+xml;utf8,<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><polygon points="4,6 12,6 8,12" fill="%235043c9"/></svg>') no-repeat center;
+  background: url('data:image/svg+xml;utf8,<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><polygon points="4,6 12,6 8,12" fill="%235043c9"/></svg>')
+    no-repeat center;
 }
