@@ -140,7 +140,6 @@ Cela va formater tous les fichiers compatibles dans le dossier courant.
 ## 📈 Améliorations futures
 
 - [ ] Intégration Google Analytics
-- [ ] Accessibilité renforcée (audit Lighthouse)
 
 ---
 
