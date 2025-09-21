@@ -58,7 +58,7 @@
 
 <body>
 
-    <header style="background: linear-gradient(135deg, #2c1810, #4a2c5a, #3d2b69);" class="c-w position-relative test">
+    <header class="c-w position-relative test bg-gradient-header">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent ps-4 pe-4">
             <a class="navbar-brand c-w title-menu" href="https://bouche-jc.fr">
                 <img src="https://bouche-jc.fr/front/img/icon/logo-c.png" alt="Contact"
@@ -87,7 +87,7 @@
         <!-- Navigation Menu -->
 
         <nav class="p-0">
-            <h1 class="m-auto">Nos Activités</h1>
+            <h1 class="m-auto">Nos activités</h1>
             <br>
 
             <hr class="c-w m-auto">
@@ -148,7 +148,7 @@
         </nav>
 
         <svg width="100%" id="svg" viewBox="0 0 1920 100" xmlns="http://www.w3.org/2000/svg"
-            style="position: absolute; left: 0; right: 0; z-index: 0;" class="bottom-0-m">
+            class="bottom-0-m position-absolute w-100">
             <path d="M 0,100 L 0,0 C 320,50 640,80 960,60 C 1280,40 1600,20 1920,0 L 1920,100 L 0,100 Z" stroke="none"
                 stroke-width="0" fill="#ffffff" fill-opacity="1"></path>
         </svg>
@@ -157,7 +157,7 @@
 
     <main class="container my-5">
         <!-- Chauffage Section -->
-        <article id="chauffage" class="mb-5 fade-in">
+    <article id="chauffage" class="mb-5 fade-in">
             <h2 class="text-center mb-4 c-primary">Chauffage</h2>
             <hr class="w-25 text-center m-auto c-primary">
             <br>
@@ -228,7 +228,7 @@
         </article>
 
         <!-- Plomberie Section -->
-        <article id="plomberie" class="mb-5 fade-in widget-left">
+    <article id="plomberie" class="mb-5 fade-in widget-left">
             <div class="ml-800">
                 <h2 class="text-center mb-4 c-w">Plomberie</h2>
                 <hr class="w-25 text-center m-auto c-w">
@@ -298,7 +298,7 @@
         </article>
 
         <!-- Salle de Bain Section -->
-        <article id="salle-de-bain" class="mb-5 fade-in">
+    <article id="salle-de-bain" class="mb-5 fade-in">
             <h2 class="text-center mb-4 c-primary">Salle de Bain</h2>
             <hr class="w-25 text-center m-auto c-primary">
             <br>
@@ -369,7 +369,7 @@
         </article>
 
         <!-- Climatisation Section -->
-        <article id="climatisation" class="mb-5 fade-in widget">
+    <article id="climatisation" class="mb-5 fade-in widget">
             <h2 class="text-center mb-4 c-w">Pompe à chaleur & climatisation</h2>
             <hr class="w-50 text-center m-auto c-w">
             <br>
@@ -446,7 +446,7 @@
             </div>
         </article>
 
-        <div class="container c-primary m-m text-center fade-in">
+    <div class="container c-primary m-m text-center fade-in">
             <h3>Nous vous garantissons un service transparent avec des devis clairs et détaillés.<br>
                 En faisant confiance à l’Entreprise Bouche Jc & Patricia, vous aurez la garantie d’un service
                 personnalisé
@@ -464,7 +464,7 @@
 
     <!-- Vague décorative en bas -->
     <svg width="100%" height="100px" viewBox="0 0 1920 100" xmlns="http://www.w3.org/2000/svg"
-        style="position: relative; z-index: 1;" class="bottom-wave">
+    class="bottom-wave position-relative w-100">
         <path d="M 0,0 C 320,30 640,20 960,40 C 1280,60 1600,80 1920,100 L 1920,0 L 0,0 Z" stroke="none"
             stroke-width="0" fill="#ffffff" fill-opacity="1"></path>
     </svg>
@@ -503,26 +503,16 @@
     </footer>
 
     <!-- Modal pour afficher l'image en grand -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true" style="max-height: 90vh;">
+    <div class="modal fade" id="image-modal" tabindex="-1" aria-labelledby="image-modal-label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-body p-0" >
-                    <img id="modalImage" src="" alt="Image agrandie" class="img-fluid" style="max-height: 90%; background-size: cover;">
+                    <img id="modal-image" src="" alt="image-agrandie" class="img-fluid modal-image">
                 </div>
             </div>
         </div>
     </div>
-<style>
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Cercle noir transparent */
-    border-radius: 10%;
-    padding: 18px; /* Agrandit le cercle autour de la flèche */
-    width: 20px;   /* Taille originale de la flèche */
-    height: 20px;  /* Taille originale de la flèche */
-    box-sizing: content-box;
-}
-</style>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
@@ -530,8 +520,8 @@
 
     <script>
         function showImageModal(src) {
-            document.getElementById('modalImage').src = src;
-            var modal = new bootstrap.Modal(document.getElementById('imageModal'));
+            document.getElementById('modal-image').src = src;
+            var modal = new bootstrap.Modal(document.getElementById('image-modal'));
             modal.show();
         }
     </script>

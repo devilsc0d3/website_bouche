@@ -119,7 +119,7 @@ header hr {
     margin-left: 0;
     border-radius: 20px;
     padding: 30px 15px;
-    box-shadow: 0 8px 48px 0 rgba(80, 67, 201, 0.35), 0 4px 24px 0 rgba(0,0,0,0.18);
+    box-shadow: 0 8px 48px 0 rgba(80, 67, 201, 0.35), 0 4px 24px 0 rgba(0, 0, 0, 0.18);
 }
 
 .ml-800 {
@@ -131,7 +131,7 @@ header hr {
     border-radius: 20px;
     padding: 30px 15px;
     margin: 20px 0;
-    box-shadow: 0 8px 48px 0 rgba(80, 67, 201, 0.35), 0 4px 24px 0 rgba(0,0,0,0.18);
+    box-shadow: 0 8px 48px 0 rgba(80, 67, 201, 0.35), 0 4px 24px 0 rgba(0, 0, 0, 0.18);
 }
 
 .bottom-m {
@@ -154,7 +154,8 @@ article img {
     max-width: 400px;
 }
 
-p, ul {
+p,
+ul {
     font-size: 1rem;
     line-height: 1.6;
     margin-top: 15px;
@@ -248,17 +249,17 @@ nav .container {
     .service-widget {
         min-height: 200px;
     }
-    
+
     .service-icon {
         width: 50px;
         height: 50px;
         object-fit: contain;
     }
-    
+
     .service-widget h3 {
         font-size: 1.1rem;
     }
-    
+
     .service-widget p {
         font-size: 0.8rem;
     }
@@ -269,7 +270,7 @@ nav .container {
         min-height: 180px;
         margin-bottom: 1rem;
     }
-    
+
     .service-icon {
         width: 40px;
         height: 40px;
@@ -293,62 +294,63 @@ nav .container {
         /* Ajout d'un padding bottom pour éviter le chevauchement */
         padding-bottom: 150px;
     }
-    
+
     header h1 {
         font-size: 2.5rem;
         margin-top: 30px;
     }
-    
+
     header p {
         font-size: 1.5rem;
         margin-top: 25px;
     }
-    
+
     /* Espacement spécial pour les widgets en mode tablette */
     .container.my-5 {
         margin-bottom: 5rem !important;
         padding-bottom: 2rem;
     }
-    
+
     /* Ajout d'espacement pour le main */
     main.container {
         margin-top: 4rem !important;
     }
-    
+
     /* Ajustement de la vague pour tablette */
     .bottom-0-m {
         bottom: -20px;
     }
-    
+
     .widget-left {
         margin-left: -200px;
         border-radius: 0 60px 60px 0;
         padding: 40px 20px;
     }
-    
+
     .ml-800 {
         margin-left: 200px;
     }
-    
+
     .widget {
         border-radius: 20px;
         padding: 40px 30px;
     }
-    
+
     .size-img {
         width: 60vw;
         min-width: 250px;
         max-width: 500px;
     }
-    
-    p, ul {
+
+    p,
+    ul {
         font-size: 1.05rem;
     }
-    
+
     h2 {
         font-size: 2rem;
     }
-    
+
     h3 {
         font-size: 1.5rem;
     }
@@ -360,46 +362,49 @@ nav .container {
         height: 50vh;
         min-height: 600px;
     }
-    
+
     header h1 {
         font-size: 3rem;
         margin-top: 40px;
     }
-    
+
     header p {
+
+
         font-size: 2rem;
         margin-top: 30px;
     }
-    
+
     .widget-left {
         margin-left: -600px;
         border-radius: 0 80px 80px 0;
         padding: 50px 0;
     }
-    
+
     .ml-800 {
         margin-left: 600px;
     }
-    
+
     .widget {
         border-radius: 20px;
         padding: 50px;
     }
-    
+
     .size-img {
         width: 50vw;
         min-width: 300px;
         max-width: 600px;
     }
-    
-    p, ul {
+
+    p,
+    ul {
         font-size: 1.1rem;
     }
-    
+
     h2 {
         font-size: 2.2rem;
     }
-    
+
     h3 {
         font-size: 1.6rem;
     }
@@ -410,15 +415,15 @@ nav .container {
     .widget-left {
         margin-left: -800px;
     }
-    
+
     .ml-800 {
         margin-left: 800px;
     }
-    
+
     header h1 {
         font-size: 3.5rem;
     }
-    
+
     header p {
         font-size: 2.2rem;
     }
@@ -430,33 +435,33 @@ nav .container {
         width: 30px;
         height: 30px;
     }
-    
+
     .navbar-brand {
         font-size: 0.9rem;
     }
-    
+
     .container {
         padding-left: 10px;
         padding-right: 10px;
     }
-    
+
     .service-widget {
         margin-bottom: 15px;
     }
-    
+
     .carousel-control-prev,
     .carousel-control-next {
         width: 35px;
     }
-    
+
     .m-m {
         margin: 100px 0;
     }
-    
+
     footer .container .row .col-md-4 {
         margin-bottom: 20px;
     }
-    
+
     /* Hide decorative elements on very small screens */
     .bottom-0-m {
         display: none;
@@ -475,23 +480,23 @@ html {
     .container {
         max-width: 100%;
     }
-    
+
     article {
         padding: 0 10px;
     }
-    
+
     .widget-left .ml-800 {
         padding: 20px 15px;
     }
-    
+
     .widget .row {
         margin: 0;
     }
-    
+
     hr {
         margin: 20px auto;
     }
-    
+
     /* Better carousel controls on mobile */
     .carousel-control-prev,
     .carousel-control-next {
@@ -502,26 +507,26 @@ html {
         top: 50%;
         transform: translateY(-50%);
     }
-    
+
     .carousel-control-prev {
         left: 10px;
     }
-    
+
     .carousel-control-next {
         right: 10px;
     }
-    
+
     /* Better footer on mobile */
     footer .row .col-md-4 {
         text-align: center;
         margin-bottom: 30px;
     }
-    
+
     footer h4 {
         font-size: 1.2rem;
         margin-bottom: 15px;
     }
-    
+
     footer a {
         display: block;
         margin-bottom: 8px;
@@ -534,12 +539,12 @@ html {
     .service-widget {
         transform: none;
     }
-    
+
     .service-widget:active {
         transform: scale(0.98);
         transition: transform 0.1s ease;
     }
-    
+
     .carousel-control-prev,
     .carousel-control-next {
         opacity: 1;
@@ -547,7 +552,8 @@ html {
 }
 
 /* High DPI screens */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
     .service-icon {
         image-rendering: -webkit-optimize-contrast;
         image-rendering: crisp-edges;
@@ -560,7 +566,7 @@ html {
         border: 1px solid #ccc;
         page-break-inside: avoid;
     }
-    
+
     .carousel-control-prev,
     .carousel-control-next,
     .bottom-0-m {
@@ -571,7 +577,10 @@ html {
 
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
-    body, main, .test {
+
+    body,
+    main,
+    .test {
         background-color: #181828 !important;
         color: #f3f3f3 !important;
     }
@@ -581,24 +590,37 @@ html {
         color: #f3f3f3 !important;
     }
 
-    .navbar, .bg-primary-m {
+    .navbar,
+    .bg-primary-m {
         background-color: #161622 !important;
         color: #f3f3f3 !important;
         /* box-shadow: 0 8px 48px 0 rgba(80, 67, 201, 0.15), 0 4px 24px 0 rgba(0,0,0,0.18); */
     }
 
 
-    .widget, .widget-left, .service-widget {
+    .widget,
+    .widget-left,
+    .service-widget {
         background-color: #232347 !important;
         color: #f3f3f3 !important;
         /* box-shadow: 0 8px 48px 0 rgba(80, 67, 201, 0.15), 0 4px 24px 0 rgba(0,0,0,0.18); */
     }
 
-    .navbar-brand, .nav-link, .title-menu, h1, h2, h3, h4, p, ul, li {
+    .navbar-brand,
+    .nav-link,
+    .title-menu,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    ul,
+    li {
         color: #f3f3f3 !important;
     }
 
-    .c-primary, .c-w {
+    .c-primary,
+    .c-w {
         color: #f3f3f3 !important;
     }
 
@@ -611,15 +633,32 @@ html {
     }
 
     /* Footer */
-    footer.bg-dark, footer {
+    footer.bg-dark,
+    footer {
         background-color: #161622 !important;
         color: #f3f3f3 !important;
     }
+
     footer a {
         color: #f3f3f3 !important;
     }
+
     footer hr.bg-white {
         background-color: #444 !important;
     }
-    
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Cercle noir transparent */
+    border-radius: 10%;
+    padding: 18px;
+    /* Agrandit le cercle autour de la flèche */
+    width: 20px;
+    /* Taille originale de la flèche */
+    height: 20px;
+    /* Taille originale de la flèche */
+    box-sizing: content-box;
 }
