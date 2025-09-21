@@ -48,6 +48,7 @@ website_bouche/
 ## 🎯 Fonctionnalités Implémentées
 
 ### 1. Design & UX
+
 - ✅ Design responsive (mobile-first)
 - ✅ Vidéo de fond en header avec fallback image
 - ✅ Animations fluides avec GSAP
@@ -55,6 +56,7 @@ website_bouche/
 - ✅ Navigation intuitive avec menu hamburger mobile
 
 ### 2. Pages Principales
+
 - ✅ **Page d'accueil** (`/`) - Présentation de l'entreprise et services
 - ✅ **Page activités** (`/about`) - Détail des services (chauffage, plomberie, climatisation, salle de bain)
 - ✅ **Page mentions légales** (`/mention-legal`) - Informations légales
@@ -62,6 +64,7 @@ website_bouche/
 - ✅ **Page 404** - Gestion des erreurs
 
 ### 3. Services Présentés
+
 - 🔥 **Chauffage** - Installation et maintenance chaudières gaz/fioul
 - 🚿 **Plomberie** - Pose et réparation
 - 🛁 **Salle de bain** - Rénovation complète
@@ -70,6 +73,7 @@ website_bouche/
 ## 🔍 Optimisation SEO
 
 ### Meta Tags et Structure
+
 - ✅ Balises meta description optimisées
 - ✅ Titres H1-H6 structurés
 - ✅ Attributs alt pour toutes les images
@@ -79,6 +83,7 @@ website_bouche/
 - ✅ Favicon personnalisé
 
 ### Contenu SEO
+
 - ✅ Mots-clés ciblés : "chauffage", "plomberie", "climatisation", "salle de bain", "Vallègue", "31290"
 - ✅ Contenu riche et informatif
 - ✅ Structure sémantique HTML5
@@ -95,6 +100,7 @@ Sitemap: http://www.bouche-jc.fr/sitemap.xml
 ```
 
 **Fonctionnalités :**
+
 - ✅ Autorise tous les robots d'indexation
 - ✅ Référence le sitemap XML
 - ✅ Aucune restriction d'accès
@@ -122,6 +128,7 @@ Le sitemap XML facilite l'indexation par les moteurs de recherche :
 ```
 
 **Configuration :**
+
 - ✅ Page d'accueil priorité maximale (1.0)
 - ✅ Pages secondaires priorité élevée (0.8)
 - ✅ Fréquence de mise à jour mensuelle
@@ -135,7 +142,7 @@ Le fichier `.htaccess` gère la réécriture d'URLs et la sécurité :
 RewriteEngine On
 
 # Redirection des routes propres
-RewriteRule ^$ front/web/index.html [L] 
+RewriteRule ^$ front/web/index.html [L]
 RewriteRule ^about$ front/web/about.html [L]
 RewriteRule ^mention-legal$ front/web/mention-legal.html [L]
 RewriteRule ^sitemap$ front/web/sitemap.html [L]
@@ -150,6 +157,7 @@ RewriteRule \.(jpg|jpeg|png|gif)$ - [F]
 ```
 
 **Fonctionnalités :**
+
 - ✅ URLs propres sans extension `.html`
 - ✅ Redirection automatique vers les bonnes pages
 - ✅ Page 404 personnalisée
@@ -168,6 +176,7 @@ RewriteRule \.(jpg|jpeg|png|gif)$ - [F]
 ## 🚀 Performance
 
 ### Optimisations
+
 - ✅ Chargement asynchrone des scripts
 - ✅ Compression des images
 - ✅ CDN pour Bootstrap et GSAP
@@ -175,6 +184,7 @@ RewriteRule \.(jpg|jpeg|png|gif)$ - [F]
 - ✅ Lazy loading implicite pour les vidéos
 
 ### Métriques
+
 - ⚡ Temps de chargement optimisé
 - 📱 Compatibilité mobile excellente
 - 🎯 Core Web Vitals optimisés
@@ -182,6 +192,7 @@ RewriteRule \.(jpg|jpeg|png|gif)$ - [F]
 ## 🔗 Informations de Contact
 
 **Entreprise Bouche JC & Patricia**
+
 - 📍 Adresse : Vallègue, 31290
 - 📞 Jean-Christophe : 06 46 45 08 49
 - 📞 Patricia : 06 11 52 44 43
@@ -197,6 +208,7 @@ RewriteRule \.(jpg|jpeg|png|gif)$ - [F]
 ## 🔧 Installation et Déploiement
 
 1. **Cloner le repository**
+
    ```bash
    git clone https://github.com/devilsc0d3/website_bouche.git
    ```
@@ -224,9 +236,10 @@ RewriteRule \.(jpg|jpeg|png|gif)$ - [F]
 ## 📈 SEO et Analytics
 
 ### Points d'amélioration futurs
+
 - [ ] Intégration Google Analytics
 - [ ] Données structurées Schema.org
 
 ---
 
-*Version 1.0 - Septembre 2025*
+_Version 1.0 - Septembre 2025_

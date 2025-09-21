@@ -1,35 +1,37 @@
 .bg-primary-m {
-    background: #5043c9;
+  background: #5043c9;
 }
 
 .c-primary {
-    color: #5043c9;
+  color: #5043c9;
 }
 
 .c-w {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .c-t {
-    color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0);
 }
 
 .bg-w {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 .navbar-brand:hover,
 .nav-link:hover {
-    color: #c5b8ff;
+  color: #c5b8ff;
 }
 
 .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 0.8s ease-out;
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 1s ease-out,
+    transform 0.8s ease-out;
 }
 
 .fade-in.appear {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
