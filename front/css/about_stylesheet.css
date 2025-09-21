@@ -665,3 +665,23 @@ html {
   /* Taille originale de la flèche */
   box-sizing: content-box;
 }
+
+/* Center nav links in hamburger menu (mobile) */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-nav {
+    justify-content: center !important;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+  .navbar-nav .nav-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
