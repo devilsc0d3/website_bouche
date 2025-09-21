@@ -493,6 +493,16 @@ html {
     padding: 0 10px;
   }
 
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    border-radius: 10px !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    padding: 18px !important;
+    width: 20px !important;
+    height: 20px !important;
+    box-sizing: content-box !important;
+  }
+
   .widget-left .ml-800 {
     padding: 20px 15px;
   }
