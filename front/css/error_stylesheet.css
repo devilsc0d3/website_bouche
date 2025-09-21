@@ -154,28 +154,28 @@ body {
     .error-container {
         padding: 2rem 1rem;
     }
-    
+
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.75rem;
         margin: 2rem 0;
         max-width: 320px;
     }
-    
+
     .service-card {
         padding: 1rem 0.75rem;
     }
-    
+
     .service-title {
         font-size: 0.8rem;
     }
-    
+
     .buttons-container {
         flex-direction: column;
         align-items: center;
         gap: 0.75rem;
     }
-    
+
     .home-button {
         width: 100%;
         max-width: 280px;
@@ -188,17 +188,17 @@ body {
         grid-template-columns: repeat(4, 1fr);
         max-width: 100%;
     }
-    
+
     .service-card {
         padding: 0.75rem 0.5rem;
     }
-    
+
     .service-icon {
         width: 24px;
         height: 24px;
         margin-bottom: 0.5rem;
     }
-    
+
     .service-title {
         font-size: 0.75rem;
     }

@@ -91,12 +91,13 @@ h2 {
         color: #f3f3f3 !important;
     }
 
-     header {
+    header {
         background: linear-gradient(135deg, #161622, #161622, #161622) !important;
         color: #f3f3f3 !important;
     }
 
-    .navbar, .bg-primary-m {
+    .navbar,
+    .bg-primary-m {
         background-color: #161622 !important;
         color: #f3f3f3 !important;
         /* box-shadow: 0 8px 48px 0 rgba(80, 67, 201, 0.15), 0 4px 24px 0 rgba(0,0,0,0.18); */
@@ -111,7 +112,7 @@ h2 {
         background: linear-gradient(to bottom, rgba(24, 24, 40, 0.7) 60%, rgba(24, 24, 40, 0)) !important;
     }
 
-     /* Waves SVG dark mode */
+    /* Waves SVG dark mode */
     header svg path,
     .bottom-wave path {
         fill: #181828 !important;
@@ -119,7 +120,9 @@ h2 {
         /* fill-opacity: 0.95 !important; */
     }
 
-    h2, #mentions-legales h2, #cgps h2 {
+    h2,
+    #mentions-legales h2,
+    #cgps h2 {
         color: #b3b8f7 !important;
     }
 
@@ -156,13 +159,16 @@ h2 {
         color: #f3f3f3 !important;
     }
 
-    footer.bg-dark, footer {
+    footer.bg-dark,
+    footer {
         background-color: #161622 !important;
         color: #f3f3f3 !important;
     }
+
     footer a {
         color: #f3f3f3 !important;
     }
+
     footer hr.bg-white {
         background-color: #444 !important;
     }

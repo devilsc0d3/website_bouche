@@ -22,7 +22,8 @@ header h1 {
 .path {
     clip-path: url(#myPath);
     /*background: url("https://picsum.photos/1200/800") center/cover no-repeat;*/
-    transform: scale(0.5); /* 3x plus haut que l’original */
+    transform: scale(0.5);
+    /* 3x plus haut que l’original */
 }
 
 
@@ -191,66 +192,66 @@ article a {
         height: 100vh;
         min-height: 600px;
     }
-    
+
     .area .navbar-brand {
         font-size: 0.8rem;
     }
-    
+
     header h1 {
         font-size: 2rem;
         padding: 0 20px;
         margin-top: 30px;
     }
-    
+
     header p {
         font-size: 1.2rem;
         padding: 0 20px;
         margin-top: 15px;
     }
-    
+
     .navbar-brand {
         font-size: 1rem;
     }
-    
+
     .navbar-brand img {
         width: 30px;
         height: 30px;
     }
-    
+
     .title {
         padding: 20px;
     }
-    
+
     .title hr {
         width: 60%;
         margin: 20px auto;
     }
-    
+
     /* Service widgets on mobile */
     .widget {
         margin-bottom: 15px;
         padding: 20px;
     }
-    
+
     .widget h3 {
         font-size: 1.2rem;
     }
-    
+
     .widget p {
         font-size: 0.9rem;
     }
-    
+
     /* Video background adjustments */
     .background-video {
         object-position: center center;
     }
-    
-    
+
+
     /* Contact section */
     .w-50px {
         width: 40px !important;
     }
-    
+
     /* Footer improvements */
     footer .row .col-md-4 {
         margin-bottom: 25px;
@@ -263,15 +264,15 @@ article a {
     header h1 {
         font-size: 2.5rem;
     }
-    
+
     header p {
         font-size: 1.5rem;
     }
-    
+
     .navbar-brand {
         font-size: 1.1rem;
     }
-    
+
     .widget {
         padding: 25px;
     }
@@ -282,11 +283,11 @@ article a {
     header h1 {
         font-size: 3rem;
     }
-    
+
     header p {
         font-size: 2rem;
     }
-    
+
     .navbar-brand {
         font-size: 1.2rem;
     }
@@ -297,7 +298,7 @@ article a {
     header h1 {
         font-size: 3.5rem;
     }
-    
+
     header p {
         font-size: 2.2rem;
     }
@@ -309,17 +310,17 @@ article a {
         height: auto;
         min-height: 500px;
     }
-    
+
     header h1 {
         font-size: 1.8rem;
         margin-top: 15px;
     }
-    
+
     header p {
         font-size: 1.1rem;
         margin-top: 10px;
     }
-    
+
     .title {
         padding: 15px;
     }
@@ -330,12 +331,12 @@ article a {
     .widget:hover {
         transform: none;
     }
-    
+
     .widget:active {
         transform: scale(0.98);
         transition: transform 0.1s ease;
     }
-    
+
     .nav-link:hover {
         color: inherit;
     }
@@ -343,7 +344,10 @@ article a {
 
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
-    body, .bg-primary-m, .area {
+
+    body,
+    .bg-primary-m,
+    .area {
         background-color: #181828 !important;
         color: #f3f3f3 !important;
     }
@@ -352,11 +356,17 @@ article a {
         background-color: #181828;
     }
 
-    .navbar, .area {
+    .navbar,
+    .area {
         background-color: #232347 !important;
     }
 
-    .navbar-brand, .nav-link, .title, .widget, .footer, footer {
+    .navbar-brand,
+    .nav-link,
+    .title,
+    .widget,
+    .footer,
+    footer {
         color: #f3f3f3 !important;
     }
 
@@ -369,7 +379,8 @@ article a {
         background-color: #232347 !important;
     }
 
-    .c-primary, .c-w {
+    .c-primary,
+    .c-w {
         color: #f3f3f3 !important;
     }
 
@@ -378,6 +389,7 @@ article a {
     .wave2 svg rect {
         fill: #232347 !important;
     }
+
     .wave1 svg path,
     .wave2 svg path {
         fill: #181828 !important;
@@ -392,9 +404,11 @@ article a {
         background-color: #161622 !important;
         color: #f3f3f3 !important;
     }
+
     footer a {
         color: #f3f3f3 !important;
     }
+
     footer hr.bg-white {
         background-color: #444 !important;
     }

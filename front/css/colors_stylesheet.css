@@ -18,7 +18,8 @@
     background: #ffffff;
 }
 
-.navbar-brand:hover, .nav-link:hover {
+.navbar-brand:hover,
+.nav-link:hover {
     color: #c5b8ff;
 }
 
