@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Chewy&family=Mukta:wght@200;300;400;500;600;700;800&family=Playwrite+GB+S:ital@0;1&display=swap");
+/* Bouton scroll to top */
+#scrollToTopBtn {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9999;
+  background: #5043c9;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  opacity: 0.85;
+}
+#scrollToTopBtn:hover {
+  opacity: 1;
+  background: #7e73cc;
+}
 
 .header {
   height: 100vh;
