@@ -1,11 +1,16 @@
 RewriteEngine On
 
+# Redirection des accès directs aux pages vers leur route propre
+RewriteRule ^front/web/about.html$ /about [R=301,L]
+RewriteRule ^front/web/mention-legal.html$ /mention-legal [R=301,L]
+RewriteRule ^front/web/sitemap.html$ /sitemap [R=301,L]
+RewriteRule ^front/web/index.html$ / [R=301,L]
+
 # Redirection des routes
 RewriteRule ^$ front/web/index.html [L] 
 RewriteRule ^about$ front/web/about.html [L]
 RewriteRule ^mention-legal$ front/web/mention-legal.html [L]
 RewriteRule ^sitemap$ front/web/sitemap.html [L]
-
 
 # Redirections des erreurs
 ErrorDocument 404 /front/web/404.html
