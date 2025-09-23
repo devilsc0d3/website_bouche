@@ -1,3 +1,43 @@
+/* Pour que les h2.section-title aient la même taille que le h1 principal */
+h2.section-title {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  font-family: Rockwell, serif;
+}
+
+@media (min-width: 1200px) {
+  h2.section-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  h2.section-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 991px) {
+  h2.section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 920px) {
+  h2.section-title {
+    font-size: 2rem;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2.section-title {
+    font-size: 1.5rem;
+  }
+}
 @import url("https://fonts.googleapis.com/css2?family=Chewy&family=Mukta:wght@200;300;400;500;600;700;800&family=Playwrite+GB+S:ital@0;1&display=swap");
 /* Bouton scroll to top */
 #scrollToTopBtn {
