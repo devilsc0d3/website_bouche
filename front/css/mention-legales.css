@@ -1,3 +1,74 @@
+/* Responsive header mentions légales mobile */
+@media (max-width: 576px) {
+  header {
+    padding: 10px 0 0 0 !important;
+  }
+  .navbar {
+    padding: 0 5px !important;
+    min-height: 48px;
+  }
+  .navbar-brand {
+    font-size: 0.95rem !important;
+    margin-right: 8px !important;
+  }
+  .navbar-brand img {
+    width: 28px !important;
+    height: 28px !important;
+    margin-right: 6px !important;
+  }
+  .navbar-toggler {
+    padding: 4px 8px !important;
+    font-size: 1.1rem !important;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    z-index: 100;
+  }
+  .navbar-toggler-icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .navbar-collapse {
+    padding-top: 8px !important;
+  }
+  /* Centre les liens du menu hamburger */
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav .nav-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0 !important;
+  }
+  /* Centre les liens du menu mentions légales dans le footer */
+  footer .row .col-md-4 {
+    text-align: center;
+  }
+  footer .row .col-md-4 a {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 1.3rem !important;
+    margin-top: 10px !important;
+    margin-bottom: 8px !important;
+    padding: 0 8px !important;
+  }
+  header nav {
+    padding-bottom: 30px !important;
+  }
+}
 /* Bouton scroll to top */
 #scrollToTopBtn {
   position: fixed;
