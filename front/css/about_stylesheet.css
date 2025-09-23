@@ -1,3 +1,8 @@
+/* Pour l'image chaudière_fioul.jpeg du carrousel chauffage sur mobile, zoom sur la droite */
+
+/* Correction : cible l'image chaudière_fioul.jpeg du carrousel chauffage sur tous les écrans */
+/* Correction : cible l'image chaudière_fioul.jpeg du carrousel chauffage sur tous les écrans, peu importe la position */
+
 /* Bouton scroll to top */
 #scrollToTopBtn {
   position: fixed;
@@ -617,6 +622,32 @@ html {
   border-radius: 25px;
 }
 
+/* Spécifique au carrousel chauffage sur mobile */
+@media (max-width: 576px) {
+  /* Chauffage et plomberie en 16:9 sur mobile */
+  #carouselChauffage .carousel-inner img,
+  #carouselPlomberie .carousel-inner img {
+    width: 95vw;
+    max-width: 400px;
+    height: calc(95vw * 9 / 16);
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  /* Salle de bain et climatisation : ancien style */
+  #carouselSalleDeBain .carousel-inner img,
+  #carouselClimatisation .carousel-inner img {
+    width: 350px;
+    height: 700px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+  }
+}
+
 /* Espacement uniquement pendant la transition du carrousel */
 .carousel-item.carousel-item-next img,
 .carousel-item.carousel-item-prev img {
@@ -727,4 +758,9 @@ html {
     width: 100%;
     text-align: center;
   }
+}
+
+#carouselChauffage img[src*="chaudière_fioul.jpeg"] {
+  object-position: right !important;
+  /* object-fit: none; */
 }
