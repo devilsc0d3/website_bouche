@@ -492,6 +492,19 @@ nav .container {
   .carousel-control-next {
     width: 35px;
   }
+  /* Réduction des marges et padding pour la section plomberie sur mobile */
+  #plomberie.widget-left {
+    margin-left: 0 !important;
+    padding: 10px 5px !important;
+  }
+  #plomberie .ml-800 {
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+  #plomberie .row.m-3 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
   .m-m {
     margin: 100px 0;
@@ -645,6 +658,19 @@ html {
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
+  }
+  
+  /* Taille fixe pour les images du carrousel plomberie sur mobile */
+  #carouselPlomberie .carousel-inner img {
+    width: 95vw;
+    max-width: 500px;
+    height: calc(95vw * 9 / 16);
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
