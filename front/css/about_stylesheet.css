@@ -662,15 +662,13 @@ html {
   
   /* Taille fixe pour les images du carrousel plomberie sur mobile */
   #carouselPlomberie .carousel-inner img {
-    width: 95vw;
-    max-width: 500px;
-    height: calc(95vw * 9 / 16);
-    max-height: 260px;
+    width: 350px;
+    height: 700px;
     object-fit: cover;
-    border-radius: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 25px;
   }
 }
 
