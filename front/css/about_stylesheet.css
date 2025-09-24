@@ -654,7 +654,7 @@ html {
     margin-right: auto;
     border-radius: 25px;
   }
-  
+
   /* Taille fixe pour les images du carrousel plomberie sur mobile */
   #carouselPlomberie .carousel-inner img {
     width: 350px;
@@ -775,10 +775,10 @@ html {
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px !important;
-    background: rgba(255, 255, 255, 0.0);
+    background: rgba(255, 255, 255, 0);
     overflow: hidden;
   }
-  
+
   .navbar-nav .nav-link {
     display: block;
     width: 100%;

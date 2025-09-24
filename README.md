@@ -1,4 +1,3 @@
-
 # Sommaire
 
 [Présentation du projet](#présentation-du-projet)
@@ -15,35 +14,34 @@
 
 [clear cache](#forçage-du-clear-cache-avec-v2)
 
-
 ## Fonctionnalités du projet
 
 Ce site web vitrine intègre de nombreuses fonctionnalités modernes pour offrir une expérience optimale aux utilisateurs et améliorer la visibilité sur le web :
 
 - **Responsivité** : Affichage adapté à tous les écrans (ordinateurs, tablettes, mobiles) grâce à Bootstrap 5 et des feuilles de style personnalisées.
 - **Optimisation SEO** :
-	- Fichier `robots.txt` pour guider les moteurs de recherche
-	- Fichier `sitemap.xml` pour l’indexation des pages
-	- Balises JSON-LD (schema.org) pour les données structurées
-	- Balises canonical pour éviter le contenu dupliqué
-	- Balises meta description sur chaque page
+  - Fichier `robots.txt` pour guider les moteurs de recherche
+  - Fichier `sitemap.xml` pour l’indexation des pages
+  - Balises JSON-LD (schema.org) pour les données structurées
+  - Balises canonical pour éviter le contenu dupliqué
+  - Balises meta description sur chaque page
 - **Dark mode** : Possibilité d’afficher le site en mode sombre pour le confort visuel (via CSS et/ou JavaScript).
 - **Personnalisation des couleurs** : Utilisation de plusieurs palettes de couleurs et d’un fichier dédié (`colors_stylesheet.css`).
 - **Animations** : Effets d’apparition et transitions pour dynamiser l’interface (`animation.js`).
 - **Navigation fluide** : Bouton de retour en haut, menu clair et accessible.
 - **Sécurité et performance** :
-	- Redirections HTTPS et gestion de l’URL canonique via `.htaccess`
-	- Gestion du cache pour accélérer le chargement
-	- Protection des fichiers sensibles
+  - Redirections HTTPS et gestion de l’URL canonique via `.htaccess`
+  - Gestion du cache pour accélérer le chargement
+  - Protection des fichiers sensibles
 - **Formatage du code** : Utilisation de Prettier pour garantir un code propre et homogène.
 - **Accessibilité** : Structure HTML sémantique et bonnes pratiques pour faciliter l’accès à tous.
 - **Organisation claire des fichiers** : Séparation des pages, styles, scripts et images pour une maintenance facilitée.
 
 ---
+
 # Présentation du projet
 
 Ce projet est un site web vitrine pour une entreprise spécialisée dans les domaines du chauffage, de la climatisation, de la plomberie et de la rénovation de salle de bain. Il a pour objectif de présenter les services proposés, les réalisations, ainsi que de faciliter la prise de contact avec les clients.
-
 
 ## Technologies utilisées
 
@@ -56,6 +54,7 @@ Le projet utilise les technologies et outils suivants :
 - **Prettier** : Outil de formatage du code
 
 Les fichiers sont organisés dans le dossier `front/` :
+
 - `web/` : Pages HTML
 - `css/` : Feuilles de style CSS
 - `js/` : Scripts JavaScript
@@ -68,6 +67,7 @@ Les fichiers sont organisés dans le dossier `front/` :
 Le site a été optimisé pour le référencement naturel (SEO) grâce à plusieurs techniques :
 
 ### 1. Fichier `robots.txt`
+
 Permet d'indiquer aux moteurs de recherche quelles pages peuvent être explorées :
 
 ```
@@ -77,6 +77,7 @@ Sitemap: http://www.bouche-jc.fr/sitemap.xml
 ```
 
 ### 2. Fichier `sitemap.xml`
+
 Liste les URLs importantes du site pour faciliter l'indexation par les moteurs de recherche :
 
 ```xml
@@ -97,30 +98,32 @@ Liste les URLs importantes du site pour faciliter l'indexation par les moteurs d
 ```
 
 ### 3. Balise JSON-LD (schema.org)
+
 Intégration de données structurées pour décrire l'entreprise et améliorer la compréhension du site par Google :
 
 ```html
 <script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "LocalBusiness",
-		"name": "Entreprise Bouche Jc & Patricia",
-		"image": "https://bouche-jc.fr/front/img/icon/logo-c.png",
-		"description": "Services de chauffage, climatisation, plomberie, pose de pompe à chaleur et rénovation de salle de bain avec plus de 30 ans d'expérience.",
-		"address": {
-			"@type": "PostalAddress",
-			"addressLocality": "Vallègue",
-			"postalCode": "31290",
-			"addressCountry": "FR"
-		},
-		"telephone": "+33 6 46 45 08 49",
-		"email": "jcbouche@orange.fr",
-		"url": "https://bouche-jc.fr"
-	}
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Entreprise Bouche Jc & Patricia",
+    "image": "https://bouche-jc.fr/front/img/icon/logo-c.png",
+    "description": "Services de chauffage, climatisation, plomberie, pose de pompe à chaleur et rénovation de salle de bain avec plus de 30 ans d'expérience.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Vallègue",
+      "postalCode": "31290",
+      "addressCountry": "FR"
+    },
+    "telephone": "+33 6 46 45 08 49",
+    "email": "jcbouche@orange.fr",
+    "url": "https://bouche-jc.fr"
+  }
 </script>
 ```
 
 ### 4. Balise Canonical
+
 Permet d'indiquer l'URL principale d'une page pour éviter le contenu dupliqué :
 
 ```html
@@ -193,7 +196,7 @@ Il est recommandé d'installer l'extension Prettier dans Visual Studio Code pour
 - Chercher "Prettier - Code formatter" dans le marketplace des extensions VS Code
 - Installer l'extension
 - Activer le formatage à la sauvegarde dans les paramètres :
-	- `"editor.formatOnSave": true`
+  - `"editor.formatOnSave": true`
 
 ---
 
