@@ -327,7 +327,7 @@ nav .container {
   .test {
     height: auto;
     min-height: 70vh;
-    /* Ajout d'un padding bottom pour éviter le chevauchement */
+    /* Ajout d'un padding bottom pour Ã©viter le chevauchement */
     padding-bottom: 150px;
   }
 
@@ -341,7 +341,7 @@ nav .container {
     margin-top: 25px;
   }
 
-  /* Espacement spécial pour les widgets en mode tablette */
+  /* Espacement spÃ©cial pour les widgets en mode tablette */
   .container.my-5 {
     margin-bottom: 5rem !important;
     padding-bottom: 2rem;
@@ -487,7 +487,7 @@ nav .container {
   .carousel-control-next {
     width: 35px;
   }
-  /* Réduction des marges et padding pour la section plomberie sur mobile */
+  /* RÃ©duction des marges et padding pour la section plomberie sur mobile */
   #plomberie.widget-left {
     margin-left: 0 !important;
     padding: 10px 5px !important;
@@ -630,7 +630,7 @@ html {
   border-radius: 25px;
 }
 
-/* Spécifique au carrousel chauffage sur mobile */
+/* SpÃ©cifique au carrousel chauffage sur mobile */
 @media (max-width: 576px) {
   /* Chauffage et plomberie en 16:9 sur mobile */
   #carouselChauffage .carousel-inner img,
@@ -668,10 +668,14 @@ html {
 }
 
 /* Espacement uniquement pendant la transition du carrousel */
-.carousel-item.carousel-item-next img,
-.carousel-item.carousel-item-prev img {
+.carousel-item.carousel-item-next img {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.carousel-item.carousel-item-prev img {
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 /* Dark mode styles */
@@ -751,11 +755,11 @@ html {
   /* Cercle noir transparent */
   border-radius: 10%;
   padding: 18px;
-  /* Agrandit le cercle autour de la flèche */
+  /* Agrandit le cercle autour de la flÃ¨che */
   width: 20px;
-  /* Taille originale de la flèche */
+  /* Taille originale de la flÃ¨che */
   height: 20px;
-  /* Taille originale de la flèche */
+  /* Taille originale de la flÃ¨che */
   box-sizing: content-box;
 }
 
@@ -782,7 +786,7 @@ html {
   }
 }
 
-#carouselChauffage img[src*="chaudière_fioul.jpeg"] {
+#carouselChauffage img[src*="chaudiÃ¨re_fioul.jpeg"] {
   object-position: right !important;
   /* object-fit: none; */
 }
