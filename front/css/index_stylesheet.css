@@ -1,10 +1,10 @@
-/* Pour que les h2.section-title aient la même taille que le h1 principal */
 h2.section-title {
-  font-size: 3rem;
-  color: #ffffff;
+  /* met la meme taille que les h1 */
+  font-size: clamp(50px, 2.5vw, 100px);
+  color: #5043c9;
   text-align: center;
-  margin-top: 20px;
-  font-family: Rockwell, serif;
+  margin: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 @media (min-width: 1200px) {

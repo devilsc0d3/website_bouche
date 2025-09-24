@@ -215,8 +215,6 @@ h2 {
   color: #5043c9;
 }
 
-/* ...existing code... */
-
 @media (prefers-color-scheme: dark) {
   body {
     background: #181828 !important;
