@@ -221,7 +221,7 @@
     <!--</article>-->
 
     <!--<hr class="mx-auto w-50"> -->
-    <article class="map-section d-flex justify-content-center align-items-center"
+    <article class="map-section d-flex justify-content-center align-items-center fade-in"
       style="background: #f8f9fa; padding: 40px 0;">
       <div class="container">
         <h2 class="text-center section-title mb-4" style="color: #5043c9;">Nous situer à Vallègue</h2>
@@ -240,7 +240,7 @@
     <article class="container">
       <h2 class="text-center section-title">Nos certifications</h2>
 
-      <div class="row justify-content-center align-items-center mb-5">
+      <div class="row justify-content-center align-items-center mb-5 fade-in">
         <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
           <img src="https://bouche-jc.fr/front/img/icon/qualipac.png" alt="logo Qualipac" class="img-fluid w-100"
             style="max-width:350px; height:auto;" />
@@ -299,24 +299,27 @@
       </div>
     </article>
 
-    <article class="reviews">
+    <article class="reviews fade-in">
       <h2 class="m-5 text-center section-title" style="color: #111">
         Nos avis <strong class="c-primary">Google</strong>
         <!-- Elfsight Google Reviews | Untitled Google Reviews -->
         <script src="https://elfsightcdn.com/platform.js" async></script>
-        <div class="elfsight-app-2a9b1473-0fe9-4d35-bc38-9f5e1a435c8c" data-elfsight-app-lazy></div>
+        <div class="elfsight-app-2a9b1473-0fe9-4d35-bc38-9f5e1a435c8c fade-in" data-elfsight-app-lazy></div>
         <!-- Bouton -->
         <p style="margin-top:15px;">
-          <div class="d-flex justify-content-center">
-            <a href="https://search.google.com/local/writereview?placeid=ChIJAdgvpTSvEmsRG2zKBNpxNTo" target="_blank"
-              class="btn btn-primary btn-lg mt-2 w-100 w-md-auto d-flex align-items-center justify-content-center gap-2"
-              style="background:#5043c9;border:none;border-radius:12px;font-weight:600;font-size:1.2rem;box-shadow:0 2px 8px rgba(80,67,201,0.12);max-width:340px;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
-                <path d="M12 4.5c.38 0 .74.22.9.57l2.07 4.2 4.64.67c.97.14 1.36 1.33.66 2.01l-3.36 3.27.79 4.61c.17.97-.85 1.71-1.71 1.25L12 18.35l-4.14 2.24c-.86.46-1.88-.28-1.71-1.25l.79-4.61-3.36-3.27c-.7-.68-.31-1.87.66-2.01l4.64-.67 2.07-4.2A1 1 0 0 1 12 4.5z" fill="#FFD700" stroke="#FFD700" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              Laisser un avis
-            </a>
-          </div>
+        <div class="d-flex justify-content-center">
+          <a href="https://search.google.com/local/writereview?placeid=ChIJAdgvpTSvEmsRG2zKBNpxNTo" target="_blank"
+            class="btn btn-primary btn-lg mt-2 w-100 w-md-auto d-flex align-items-center justify-content-center gap-2"
+            style="background:#5043c9;border:none;border-radius:12px;font-weight:600;font-size:1.2rem;box-shadow:0 2px 8px rgba(80,67,201,0.12);max-width:340px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              style="vertical-align:middle;">
+              <path
+                d="M12 4.5c.38 0 .74.22.9.57l2.07 4.2 4.64.67c.97.14 1.36 1.33.66 2.01l-3.36 3.27.79 4.61c.17.97-.85 1.71-1.71 1.25L12 18.35l-4.14 2.24c-.86.46-1.88-.28-1.71-1.25l.79-4.61-3.36-3.27c-.7-.68-.31-1.87.66-2.01l4.64-.67 2.07-4.2A1 1 0 0 1 12 4.5z"
+                fill="#FFD700" stroke="#FFD700" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Laisser un avis
+          </a>
+        </div>
         </p>
     </article>
 
@@ -382,9 +385,6 @@
   </script>
 </body>
 <style>
-
-
-
   .eapps-widget-toolbar-panel-wrapper {
     box-shadow: 0 4px 16px rgba(241, 245, 0, 0.942) !important;
     width: 1px;
@@ -392,7 +392,7 @@
     overflow: hidden !important;
   }
 
-  a[href*="elfsight.com"] {
+  /* a[href*="elfsight.com"] {
   visibility: hidden !important;
   pointer-events: none !important;
   width: 0 !important;
@@ -403,10 +403,20 @@
   width: 1px !important;
   height: 12px !important;
   position: absolute !important;
+  z-index: -1 !important;
   top: 10000px !important;
-}
+} */
 
-
+  .WidgetTitle__Header-sc-c581efe-2 {
+    font-size: 0 !important;
+    line-height: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    position: absolute !important;
+  }
 
   .contact-purple-bg {
     background: #5043c9;
@@ -476,4 +486,5 @@
     }
   }
 </style>
+
 </html>
