@@ -169,16 +169,13 @@
         </div>
       </div>
     </article>
-<article class="video-section">
+    <article class="video-section">
       <div class="container">
         <!-- <h2 class="text-center section-title mb-4">Découvrez notre expertise en action</h2> -->
         <div class="row justify-content-center fade-in">
           <div class="col-12 col-lg-12">
             <div class="video-container">
-              <video 
-                controls 
-                preload="metadata" 
-                class="responsive-video"
+              <video controls preload="metadata" class="responsive-video"
                 poster="https://bouche-jc.fr/front/img/photo/splash.jpg"
                 aria-label="Vidéo de présentation de nos services">
                 <source src="../img/photo/video1.mp4" type="video/mp4" />
@@ -189,7 +186,7 @@
         </div>
       </div>
     </article>
-    
+
 
     <article>
       <div class="wave1">
@@ -222,17 +219,22 @@
         </svg>
       </div>
     </article>
+
     <article class="container">
       <h2 class="text-center section-title">Nos certifications</h2>
 
       <div class="row justify-content-center align-items-center mb-5 fade-in">
         <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
-          <img src="https://bouche-jc.fr/front/img/icon/qualipac.png" alt="logo Qualipac" class="img-fluid w-100"
-            style="max-width:350px; height:auto;" />
+          <a href="https://www.qualit-enr.org/accueil-pro/">
+            <img src="https://bouche-jc.fr/front/img/icon/qualipac.png" alt="logo Qualipac" class="img-fluid w-100"
+              style="max-width:350px; height:auto;" />
+          </a>
         </div>
         <div class="col-12 col-md-4 text-center">
-          <img src="https://bouche-jc.fr/front/img/icon/logo-qualipac.png" alt="logo Qualipac" class="img-fluid w-100"
-            style="max-width:350px; height:auto;" />
+          <a href="https://www.qualit-enr.org/qualifications/qualipac/">
+            <img src="https://bouche-jc.fr/front/img/icon/logo-qualipac.png" alt="logo Qualipac" class="img-fluid w-100"
+              style="max-width:350px; height:auto;" />
+          </a>
         </div>
         <br>
         <br>
@@ -264,15 +266,14 @@
 
     <!--<hr class="mx-auto w-50"> -->
     <article class="map-section d-flex justify-content-center align-items-center fade-in"
-  style="background: #f8f9fa; padding: 40px 0;"
-  id="map-section">
+      style="background: #f8f9fa; padding: 40px 0;" id="map-section">
       <div class="container">
-  <h2 class="text-center section-title mb-4 map-title">Nous situer à Vallègue</h2>
+        <h2 class="text-center section-title mb-4 map-title">Nous situer à Vallègue</h2>
         <div class="d-flex justify-content-center">
           <div
             style="width:100%; max-width:800px; border-radius:16px; overflow:hidden; box-shadow:0 4px 16px rgba(80,67,201,0.12); background:#fff;">
-            <iframe width="100%" height="500" style="border:0; filter: invert(0); background:#fff;" allowfullscreen loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+            <iframe width="100%" height="500" style="border:0; filter: invert(0); background:#fff;" allowfullscreen
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26529.575856294496!2d1.752509315496839!3d43.42554807912809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f12.1!3m3!1m2!1s0x12aef3874f15f6df%3A0x263c8d797c4a72dc!2sVall%C3%A8gue%2C%2031290!5e0!3m2!1sfr!2sfr!4v1696350000000!5m2!1sfr!2sfr">
             </iframe>
           </div>
@@ -408,20 +409,20 @@
     scrollBtn.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
-      // Correction scroll sur les ancres avec animation fade-in
-      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-        anchor.addEventListener('click', function(e) {
-          var targetId = this.getAttribute('href').replace('#', '');
-          var target = document.getElementById(targetId);
-          if (target) {
-            e.preventDefault();
-            setTimeout(function() {
-              var y = target.getBoundingClientRect().top + window.scrollY - 40;
-              window.scrollTo({ top: y, behavior: 'smooth' });
-            }, 100);
-          }
-        });
+    // Correction scroll sur les ancres avec animation fade-in
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      anchor.addEventListener('click', function (e) {
+        var targetId = this.getAttribute('href').replace('#', '');
+        var target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          setTimeout(function () {
+            var y = target.getBoundingClientRect().top + window.scrollY - 40;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }, 100);
+        }
       });
+    });
   </script>
 </body>
 <style>
@@ -430,39 +431,48 @@
     #map-section {
       background: #181828 !important;
     }
+
     .map-title {
       color: #f3f3f3 !important;
     }
-    #map-section .container > div {
+
+    #map-section .container>div {
       background: #181828 !important;
       color: #f3f3f3 !important;
     }
+
     #map-section iframe {
       background: #232347 !important;
       filter: invert(0.92) hue-rotate(180deg) brightness(0.95) contrast(1.1);
       border: 2px solid #5043c9;
       border-radius: 16px;
     }
+
     .contact-purple-bg {
       background: #232347 !important;
       color: #f3f3f3 !important;
     }
+
     .contact-purple-bg .section-title {
       color: #f3f3f3 !important;
     }
+
     .contact-widget-bg {
       background: #181828 !important;
       color: #f3f3f3 !important;
       border: 1px solid #5043c9;
     }
+
     .contact-widget-text {
       color: #f3f3f3 !important;
     }
-      /* Adaptation du bas de la section contact en dark mode */
-      .contact-purple-bg::after {
-        background: #181828 !important;
-      }
+
+    /* Adaptation du bas de la section contact en dark mode */
+    .contact-purple-bg::after {
+      background: #181828 !important;
+    }
   }
+
   .eapps-widget-toolbar-panel-wrapper {
     box-shadow: 0 4px 16px rgba(241, 245, 0, 0.942) !important;
     width: 1px;
@@ -578,7 +588,7 @@
     .video-section {
       background: #181828 !important;
     }
-    
+
     .video-section .section-title {
       color: #f3f3f3 !important;
     }
