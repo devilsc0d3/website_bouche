@@ -238,6 +238,47 @@ header img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: transparent;
   transition: all 0.3s;
+  height: 100%;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Assurer que les liens des widgets prennent toute la hauteur */
+article.container .row a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+article.container .row a .widget {
+  margin: 0;
+  height: 100%;
+}
+
+/* Forcer la même hauteur pour toutes les colonnes des widgets - basée sur le plus grand */
+article.container .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+article.container .row .col-12.col-md-6.col-lg-3 {
+  display: flex;
+  flex: 1;
+}
+
+article.container .row .col-12.col-md-6.col-lg-3 a {
+  width: 100%;
+  display: flex;
+  flex: 1;
+}
+
+/* Hauteur minimale spécifique pour les widgets principaux */
+.widget.bg-primary-m.text-white.p-4 {
+  min-height: 280px !important;
+  height: 100%;
 }
 
 .widget:hover {

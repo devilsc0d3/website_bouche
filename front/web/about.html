@@ -95,7 +95,7 @@
       <nav
         class="navbar navbar-expand-lg navbar-light bg-transparent ps-1 pe-1"
       >
-        <a class="navbar-brand c-w title-menu" href="https://bouche-jc.fr">
+        <a class="navbar-brand c-w title-menu" href="/">
           <img
             src="https://bouche-jc.fr/front/img/icon/logo-c.png"
             alt="Contact"
@@ -120,17 +120,19 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link c-w" href="https://bouche-jc.fr">Accueil</a>
+              <a class="nav-link c-w" href="/">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link c-w" href="https://bouche-jc.fr/about"
-                >Activités</a
-              >
+              <a class="nav-link c-w" href="#chauffage">Chauffage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link c-w" href="https://bouche-jc.fr/#contact"
-                >Contact</a
-              >
+              <a class="nav-link c-w" href="#plomberie">Plomberie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link c-w" href="#salle-de-bain">Salle de bain</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link c-w" href="#climatisation">Climatisation</a>
             </li>
           </ul>
         </div>
@@ -191,7 +193,7 @@
 
             <div class="col-12 col-md-6 col-lg-3 mb-4">
               <a
-                href="https://bouche-jc.fr/about#salle-de-bain"
+                href="#salle-de-bain"
                 class="text-decoration-none"
               >
                 <div
@@ -861,6 +863,20 @@
       });
       scrollBtn.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      // Correction scroll sur les ancres avec animation fade-in
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          var targetId = this.getAttribute('href').replace('#', '');
+          var target = document.getElementById(targetId);
+          if (target) {
+            e.preventDefault();
+            setTimeout(function() {
+              var y = target.getBoundingClientRect().top + window.scrollY - 40;
+              window.scrollTo({ top: y, behavior: 'smooth' });
+            }, 100);
+          }
+        });
       });
     </script>
   </body>
