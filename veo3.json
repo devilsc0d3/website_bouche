@@ -1,0 +1,60 @@
+{
+    "title": "Publicité Bouche JC et Patricia",
+    "duration": "8s",
+    "style": "publicité artisanale poétique et moderne",
+    "language": "fr",
+    "description": "Vidéo publicitaire courte et symbolique pour l’entreprise Bouche JC et Patricia, spécialisée en plomberie, chauffage, climatisation, pompes à chaleur et rénovation de salle de bain.",
+    "visuals": [
+        {
+            "scene": 1,
+            "duration": "1.5s",
+            "description": "Une goutte d’eau tombe au ralenti, rebondit, et se transforme en une salle de bain élégante dont la faïence s’installe carreau après carreau en accéléré. Ambiance lumineuse et propre."
+        },
+        {
+            "scene": 2,
+            "duration": "1.5s",
+            "description": "Une boule à neige est secouée : à l’intérieur, une chaudière moderne s’assemble pièce par pièce, diffusant une sensation de chaleur douce avec une lueur orangée."
+        },
+        {
+            "scene": 3,
+            "duration": "1.5s",
+            "description": "Une glace fond lentement sous le soleil, transition vers une unité de climatisation qui s’assemble rapidement, diffusant une fraîcheur visuelle (effets de brume bleue)."
+        },
+        {
+            "scene": 4,
+            "duration": "1.5s",
+            "description": "Une petite maison se secoue comme une boule à neige : à l’intérieur, une pompe à chaleur se met en place tandis que les murs s’ouvrent pour l’intégrer harmonieusement."
+        },
+        {
+            "scene": 5,
+            "duration": "2s",
+            "description": "Une baignoire et un lavabo se vident élégamment, l’eau se transforme en énergie qui forme un ballon thermodynamique. Transition finale vers un fond violet (#5043c9) avec le logo de l’entreprise affiché à gauche et le texte 'Bouche JC & Patricia' à droite, en blanc, typographie moderne et lisible."
+        }
+    ],
+    "voice_over": {
+        "enabled": true,
+        "language": "fr",
+        "voice": "femme française professionnelle",
+        "text": "Bouche JC et Patricia, plomberie, chauffage, climatisation, pompes à chaleur et salles de bain. L’excellence à deux.",
+        "tone": "professionnel, chaleureux et inspirant"
+    },
+    "music": {
+        "mood": "moderne et fluide",
+        "tempo": "rapide mais doux",
+        "volume": "modéré",
+        "description": "Ambiance sonore évoquant l’eau, la chaleur et la fraîcheur, avec des transitions harmonieuses entre les scènes."
+    },
+    "output": {
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "format": "mp4"
+    },
+    "branding": {
+        "use_logo_at_start": false,
+        "use_logo_at_end": true,
+        "logo_position": "gauche",
+        "background_color": "#5043c9",
+        "text_color": "#ffffff",
+        "font_style": "moderne et lisible"
+    }
+}
