@@ -176,7 +176,15 @@
         <div class="row justify-content-center fade-in">
           <div class="col-12 col-lg-12">
             <div class="video-container">
-              <video controls preload="metadata" class="responsive-video"
+              <!-- Vidéo pour mobile -->
+              <video controls preload="metadata" class="responsive-video d-block d-md-none"
+                poster="../img/photo/screen_mobile.png"
+                aria-label="Vidéo de présentation de nos services">
+                <source src="../img/photo/pub_mobile.mp4" type="video/mp4" />
+                Votre navigateur ne supporte pas les vidéos HTML5.
+              </video>
+              <!-- Vidéo pour desktop -->
+              <video controls preload="metadata" class="responsive-video d-none d-md-block"
                 poster="../img/icon/screen1.png"
                 aria-label="Vidéo de présentation de nos services">
                 <source src="../img/photo/video3.mp4" type="video/mp4" />
